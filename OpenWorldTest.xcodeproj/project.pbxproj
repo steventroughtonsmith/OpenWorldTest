@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B02C44F11686B37E0050BD75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02C44F01686B37E0050BD75 /* Cocoa.framework */; };
+		B02C450E1686B39E0050BD75 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02C450D1686B39E0050BD75 /* SceneKit.framework */; };
+		B02C45131686B5610050BD75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02C45121686B5610050BD75 /* QuartzCore.framework */; };
+		B03D9A8C1686C4D60013F526 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03D9A8B1686C4D60013F526 /* OpenGL.framework */; };
+		B03D9A8F1686CD340013F526 /* libddhid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B03D9A8E1686CD340013F526 /* libddhid.a */; };
+		B03D9AA31686CDD90013F526 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03D9AA21686CDD90013F526 /* IOKit.framework */; };
+		B0429D1316A3501500331EDE /* shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59BF16A346E300E90A1A /* shader.frag */; };
+		B0429D1416A3501700331EDE /* shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59C016A346E300E90A1A /* shader.vert */; };
+		B0AC59DC16A346E300E90A1A /* cube.dae in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59BE16A346E300E90A1A /* cube.dae */; };
+		B0AC59DD16A346E300E90A1A /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59BF16A346E300E90A1A /* shader.frag */; };
+		B0AC59DE16A346E300E90A1A /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59C016A346E300E90A1A /* shader.vert */; };
+		B0AC59DF16A346E300E90A1A /* tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59C116A346E300E90A1A /* tree.dae */; };
+		B0AC59E016A346E300E90A1A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59C216A346E300E90A1A /* Credits.rtf */; };
+		B0AC59E116A346E300E90A1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59C416A346E300E90A1A /* InfoPlist.strings */; };
+		B0AC59E216A346E300E90A1A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59C616A346E300E90A1A /* MainMenu.xib */; };
+		B0AC59E316A346E300E90A1A /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59C916A346E300E90A1A /* crosshair.png */; };
+		B0AC59E416A346E300E90A1A /* dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59CA16A346E300E90A1A /* dirt.png */; };
+		B0AC59E516A346E300E90A1A /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59CB16A346E300E90A1A /* grass.png */; };
+		B0AC59E616A346E300E90A1A /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = B0AC59CC16A346E300E90A1A /* water.png */; };
+		B0AC59E716A346E300E90A1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59CD16A346E300E90A1A /* main.m */; };
+		B0AC59E916A346E300E90A1A /* OWTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59D116A346E300E90A1A /* OWTAppDelegate.m */; };
+		B0AC59EA16A346E300E90A1A /* OWTChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59D316A346E300E90A1A /* OWTChunk.m */; };
+		B0AC59EB16A346E300E90A1A /* OWTEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59D516A346E300E90A1A /* OWTEntity.m */; };
+		B0AC59EC16A346E300E90A1A /* OWTGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59D716A346E300E90A1A /* OWTGameView.m */; };
+		B0AC59ED16A346E300E90A1A /* OWTLevelGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59D916A346E300E90A1A /* OWTLevelGenerator.m */; };
+		B0AC59EE16A346E300E90A1A /* OWTPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AC59DB16A346E300E90A1A /* OWTPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B02C44EC1686B37E0050BD75 /* OpenWorldTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWorldTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02C44F01686B37E0050BD75 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B02C44F31686B37E0050BD75 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B02C44F41686B37E0050BD75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B02C44F51686B37E0050BD75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B02C450D1686B39E0050BD75 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		B02C45121686B5610050BD75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B03D9A8B1686C4D60013F526 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B03D9A8E1686CD340013F526 /* libddhid.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libddhid.a; sourceTree = "<group>"; };
+		B03D9A961686CD6D0013F526 /* DDHidAppleRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidAppleRemote.h; sourceTree = "<group>"; };
+		B03D9A971686CD6D0013F526 /* DDHidDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidDevice.h; sourceTree = "<group>"; };
+		B03D9A981686CD6D0013F526 /* DDHidElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidElement.h; sourceTree = "<group>"; };
+		B03D9A991686CD6D0013F526 /* DDHidEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidEvent.h; sourceTree = "<group>"; };
+		B03D9A9A1686CD6D0013F526 /* DDHidJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidJoystick.h; sourceTree = "<group>"; };
+		B03D9A9B1686CD6D0013F526 /* DDHidKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidKeyboard.h; sourceTree = "<group>"; };
+		B03D9A9C1686CD6D0013F526 /* DDHidKeyboardBarcodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidKeyboardBarcodeScanner.h; sourceTree = "<group>"; };
+		B03D9A9D1686CD6D0013F526 /* DDHidLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidLib.h; sourceTree = "<group>"; };
+		B03D9A9E1686CD6D0013F526 /* DDHidMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidMouse.h; sourceTree = "<group>"; };
+		B03D9A9F1686CD6D0013F526 /* DDHidQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidQueue.h; sourceTree = "<group>"; };
+		B03D9AA01686CD6D0013F526 /* DDHidUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidUsage.h; sourceTree = "<group>"; };
+		B03D9AA11686CD6D0013F526 /* DDHidUsageTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHidUsageTables.h; sourceTree = "<group>"; };
+		B03D9AA21686CDD90013F526 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B0AC59BE16A346E300E90A1A /* cube.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cube.dae; sourceTree = "<group>"; };
+		B0AC59BF16A346E300E90A1A /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		B0AC59C016A346E300E90A1A /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		B0AC59C116A346E300E90A1A /* tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tree.dae; sourceTree = "<group>"; };
+		B0AC59C316A346E300E90A1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B0AC59C516A346E300E90A1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0AC59C716A346E300E90A1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B0AC59C916A346E300E90A1A /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
+		B0AC59CA16A346E300E90A1A /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
+		B0AC59CB16A346E300E90A1A /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		B0AC59CC16A346E300E90A1A /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
+		B0AC59CD16A346E300E90A1A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0AC59CE16A346E300E90A1A /* OpenWorldTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenWorldTest-Info.plist"; sourceTree = "<group>"; };
+		B0AC59CF16A346E300E90A1A /* OpenWorldTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenWorldTest-Prefix.pch"; sourceTree = "<group>"; };
+		B0AC59D016A346E300E90A1A /* OWTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTAppDelegate.h; sourceTree = "<group>"; };
+		B0AC59D116A346E300E90A1A /* OWTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTAppDelegate.m; sourceTree = "<group>"; };
+		B0AC59D216A346E300E90A1A /* OWTChunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTChunk.h; sourceTree = "<group>"; };
+		B0AC59D316A346E300E90A1A /* OWTChunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTChunk.m; sourceTree = "<group>"; };
+		B0AC59D416A346E300E90A1A /* OWTEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTEntity.h; sourceTree = "<group>"; };
+		B0AC59D516A346E300E90A1A /* OWTEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTEntity.m; sourceTree = "<group>"; };
+		B0AC59D616A346E300E90A1A /* OWTGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTGameView.h; sourceTree = "<group>"; };
+		B0AC59D716A346E300E90A1A /* OWTGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTGameView.m; sourceTree = "<group>"; };
+		B0AC59D816A346E300E90A1A /* OWTLevelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTLevelGenerator.h; sourceTree = "<group>"; };
+		B0AC59D916A346E300E90A1A /* OWTLevelGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTLevelGenerator.m; sourceTree = "<group>"; };
+		B0AC59DA16A346E300E90A1A /* OWTPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTPlayer.h; sourceTree = "<group>"; };
+		B0AC59DB16A346E300E90A1A /* OWTPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B02C44E91686B37E0050BD75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03D9AA31686CDD90013F526 /* IOKit.framework in Frameworks */,
+				B03D9A8C1686C4D60013F526 /* OpenGL.framework in Frameworks */,
+				B02C45131686B5610050BD75 /* QuartzCore.framework in Frameworks */,
+				B02C450E1686B39E0050BD75 /* SceneKit.framework in Frameworks */,
+				B02C44F11686B37E0050BD75 /* Cocoa.framework in Frameworks */,
+				B03D9A8F1686CD340013F526 /* libddhid.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B02C44E11686B37E0050BD75 = {
+			isa = PBXGroup;
+			children = (
+				B0AC59BB16A3467C00E90A1A /* Controller Support */,
+				B0AC59BC16A346E300E90A1A /* OpenWorldTest */,
+				B02C44EF1686B37E0050BD75 /* Frameworks */,
+				B02C44ED1686B37E0050BD75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B02C44ED1686B37E0050BD75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B02C44EC1686B37E0050BD75 /* OpenWorldTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B02C44EF1686B37E0050BD75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B03D9AA21686CDD90013F526 /* IOKit.framework */,
+				B03D9A8B1686C4D60013F526 /* OpenGL.framework */,
+				B02C45121686B5610050BD75 /* QuartzCore.framework */,
+				B02C450D1686B39E0050BD75 /* SceneKit.framework */,
+				B02C44F01686B37E0050BD75 /* Cocoa.framework */,
+				B02C44F21686B37E0050BD75 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B02C44F21686B37E0050BD75 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B02C44F31686B37E0050BD75 /* AppKit.framework */,
+				B02C44F41686B37E0050BD75 /* CoreData.framework */,
+				B02C44F51686B37E0050BD75 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B03D9A951686CD6D0013F526 /* libdhid */ = {
+			isa = PBXGroup;
+			children = (
+				B03D9A961686CD6D0013F526 /* DDHidAppleRemote.h */,
+				B03D9A971686CD6D0013F526 /* DDHidDevice.h */,
+				B03D9A981686CD6D0013F526 /* DDHidElement.h */,
+				B03D9A991686CD6D0013F526 /* DDHidEvent.h */,
+				B03D9A9A1686CD6D0013F526 /* DDHidJoystick.h */,
+				B03D9A9B1686CD6D0013F526 /* DDHidKeyboard.h */,
+				B03D9A9C1686CD6D0013F526 /* DDHidKeyboardBarcodeScanner.h */,
+				B03D9A9D1686CD6D0013F526 /* DDHidLib.h */,
+				B03D9A9E1686CD6D0013F526 /* DDHidMouse.h */,
+				B03D9A9F1686CD6D0013F526 /* DDHidQueue.h */,
+				B03D9AA01686CD6D0013F526 /* DDHidUsage.h */,
+				B03D9AA11686CD6D0013F526 /* DDHidUsageTables.h */,
+			);
+			path = libdhid;
+			sourceTree = "<group>";
+		};
+		B0429D1516A3505F00331EDE /* Game Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B0AC59D216A346E300E90A1A /* OWTChunk.h */,
+				B0AC59D316A346E300E90A1A /* OWTChunk.m */,
+				B0AC59D416A346E300E90A1A /* OWTEntity.h */,
+				B0AC59D516A346E300E90A1A /* OWTEntity.m */,
+				B0AC59DA16A346E300E90A1A /* OWTPlayer.h */,
+				B0AC59DB16A346E300E90A1A /* OWTPlayer.m */,
+			);
+			name = "Game Logic";
+			sourceTree = "<group>";
+		};
+		B0AC59BB16A3467C00E90A1A /* Controller Support */ = {
+			isa = PBXGroup;
+			children = (
+				B03D9A951686CD6D0013F526 /* libdhid */,
+				B03D9A8E1686CD340013F526 /* libddhid.a */,
+			);
+			name = "Controller Support";
+			sourceTree = "<group>";
+		};
+		B0AC59BC16A346E300E90A1A /* OpenWorldTest */ = {
+			isa = PBXGroup;
+			children = (
+				B0AC59BD16A346E300E90A1A /* 3D */,
+				B0AC59C216A346E300E90A1A /* Credits.rtf */,
+				B0AC59C416A346E300E90A1A /* InfoPlist.strings */,
+				B0AC59C616A346E300E90A1A /* MainMenu.xib */,
+				B0AC59C816A346E300E90A1A /* Images */,
+				B0AC59CD16A346E300E90A1A /* main.m */,
+				B0AC59CE16A346E300E90A1A /* OpenWorldTest-Info.plist */,
+				B0AC59CF16A346E300E90A1A /* OpenWorldTest-Prefix.pch */,
+				B0AC59D016A346E300E90A1A /* OWTAppDelegate.h */,
+				B0AC59D116A346E300E90A1A /* OWTAppDelegate.m */,
+				B0AC59D616A346E300E90A1A /* OWTGameView.h */,
+				B0AC59D716A346E300E90A1A /* OWTGameView.m */,
+				B0AC59D816A346E300E90A1A /* OWTLevelGenerator.h */,
+				B0AC59D916A346E300E90A1A /* OWTLevelGenerator.m */,
+				B0429D1516A3505F00331EDE /* Game Logic */,
+			);
+			path = OpenWorldTest;
+			sourceTree = "<group>";
+		};
+		B0AC59BD16A346E300E90A1A /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				B0AC59BE16A346E300E90A1A /* cube.dae */,
+				B0AC59BF16A346E300E90A1A /* shader.frag */,
+				B0AC59C016A346E300E90A1A /* shader.vert */,
+				B0AC59C116A346E300E90A1A /* tree.dae */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
+		B0AC59C816A346E300E90A1A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B0AC59C916A346E300E90A1A /* crosshair.png */,
+				B0AC59CA16A346E300E90A1A /* dirt.png */,
+				B0AC59CB16A346E300E90A1A /* grass.png */,
+				B0AC59CC16A346E300E90A1A /* water.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B02C44EB1686B37E0050BD75 /* OpenWorldTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B02C450A1686B37F0050BD75 /* Build configuration list for PBXNativeTarget "OpenWorldTest" */;
+			buildPhases = (
+				B02C44E81686B37E0050BD75 /* Sources */,
+				B02C44E91686B37E0050BD75 /* Frameworks */,
+				B02C44EA1686B37E0050BD75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenWorldTest;
+			productName = SceneKitRPG;
+			productReference = B02C44EC1686B37E0050BD75 /* OpenWorldTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B02C44E31686B37E0050BD75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OWT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "High Caffeine Content";
+			};
+			buildConfigurationList = B02C44E61686B37E0050BD75 /* Build configuration list for PBXProject "OpenWorldTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B02C44E11686B37E0050BD75;
+			productRefGroup = B02C44ED1686B37E0050BD75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B02C44EB1686B37E0050BD75 /* OpenWorldTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B02C44EA1686B37E0050BD75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AC59DC16A346E300E90A1A /* cube.dae in Resources */,
+				B0AC59DF16A346E300E90A1A /* tree.dae in Resources */,
+				B0AC59E016A346E300E90A1A /* Credits.rtf in Resources */,
+				B0AC59E116A346E300E90A1A /* InfoPlist.strings in Resources */,
+				B0AC59E216A346E300E90A1A /* MainMenu.xib in Resources */,
+				B0AC59E316A346E300E90A1A /* crosshair.png in Resources */,
+				B0AC59E416A346E300E90A1A /* dirt.png in Resources */,
+				B0AC59E516A346E300E90A1A /* grass.png in Resources */,
+				B0AC59E616A346E300E90A1A /* water.png in Resources */,
+				B0429D1316A3501500331EDE /* shader.frag in Resources */,
+				B0429D1416A3501700331EDE /* shader.vert in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B02C44E81686B37E0050BD75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AC59DD16A346E300E90A1A /* shader.frag in Sources */,
+				B0AC59DE16A346E300E90A1A /* shader.vert in Sources */,
+				B0AC59E716A346E300E90A1A /* main.m in Sources */,
+				B0AC59E916A346E300E90A1A /* OWTAppDelegate.m in Sources */,
+				B0AC59EA16A346E300E90A1A /* OWTChunk.m in Sources */,
+				B0AC59EB16A346E300E90A1A /* OWTEntity.m in Sources */,
+				B0AC59EC16A346E300E90A1A /* OWTGameView.m in Sources */,
+				B0AC59ED16A346E300E90A1A /* OWTLevelGenerator.m in Sources */,
+				B0AC59EE16A346E300E90A1A /* OWTPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0AC59C216A346E300E90A1A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AC59C316A346E300E90A1A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B0AC59C416A346E300E90A1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AC59C516A346E300E90A1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B0AC59C616A346E300E90A1A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AC59C716A346E300E90A1A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B02C45081686B37F0050BD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B02C45091686B37F0050BD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B02C450B1686B37F0050BD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenWorldTest/OpenWorldTest-Prefix.pch";
+				INFOPLIST_FILE = "OpenWorldTest/OpenWorldTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/\"";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = OpenWorldTest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B02C450C1686B37F0050BD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenWorldTest/OpenWorldTest-Prefix.pch";
+				INFOPLIST_FILE = "OpenWorldTest/OpenWorldTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/\"";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = OpenWorldTest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B02C44E61686B37E0050BD75 /* Build configuration list for PBXProject "OpenWorldTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02C45081686B37F0050BD75 /* Debug */,
+				B02C45091686B37F0050BD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02C450A1686B37F0050BD75 /* Build configuration list for PBXNativeTarget "OpenWorldTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02C450B1686B37F0050BD75 /* Debug */,
+				B02C450C1686B37F0050BD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B02C44E31686B37E0050BD75 /* Project object */;
+}

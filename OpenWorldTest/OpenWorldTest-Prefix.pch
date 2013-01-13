@@ -1,0 +1,14 @@
+//
+// Prefix header for all source files of the 'OpenWorldTest' target in the 'OpenWorldTest' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
+
+#define MAP_BOUNDS 768
+#define CHUNK_SIZE 16
+
+#define MCP_DEGREES_TO_RADIANS(x) (x  * 180 / M_PI)
+
+#define GAME_DEPTH 32 // we scale Z in the map generator - change to 16 for mountains!

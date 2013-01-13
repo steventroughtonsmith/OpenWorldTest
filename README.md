@@ -18,7 +18,4 @@ THANKS
 
 Many thanks go to the following people, without whom I'd never have got this far with SceneKit:
 
-Jeff LaMarche
-Tom Irving
-Wade Tregaskis
-and Thomas Goossens
+Jeff LaMarche, Tom Irving, Wade Tregaskis, and Thomas Goossens
